@@ -1,0 +1,60 @@
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+ul,
+ol {
+    margin: 0;
+    padding-left: 0;
+}
+
+button {
+    cursor: pointer;
+}
+
+address {
+    font-style: normal;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+body {
+    font-family: 'open sans', sans-serif;
+}
+
+.list {
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+.header-container {
+    display: flex;
+}
+.sidebar {
+    padding-top: 32px;
+    padding-right: 31px;
+}
+.logo-icon {
+    fill: #303030;
+}
+
+
+
