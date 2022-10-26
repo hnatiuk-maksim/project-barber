@@ -45,16 +45,146 @@ body {
     padding-right: 15px;
     margin: 0 auto;
 }
+
+.pre-title {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.pre-title::before {
+    content: '';
+    width: 60px;
+    height: 1px;
+    background-color: currentColor;
+    
+}
+
+.btn {
+    min-width: 160px;
+    height: 40px;
+    background-color: transparent;
+    border: 1px solid #FF6C00;
+    border-radius: 25px;
+
+    font-family: inherit;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+/* Стилі Хедеру */
+.header {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    /* position: fixed; */
+    background-color: grey;
+}
 .header-container {
     display: flex;
+    align-items: center;
 }
-.sidebar {
-    padding-top: 32px;
-    padding-right: 31px;
+.header-nav {
+    display: flex;
+    align-items: center;
+}
+.header-logo {
+    display: block;
+    margin-right: 131px;
 }
 .logo-icon {
     fill: #303030;
 }
+.navigation {
+    display: flex;
+    gap: 30px;
+}
 
+.navigation__item {
+}
+.navigation__link {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
 
+}
+.navigation__link:hover,
+.navigation__link:focus {
+    color:  #FF6C00;
+}
+.connect {
+    margin-left: auto;
+}
+.connect__link {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+}
+.connect__link:hover,
+.connect__link:focus {
+    color:  #FF6C00;
+}
+.connect__button {
+    margin-left: 43px;
+}
+.connect__button:hover,
+.connect__button:focus {
+    background-color: #FF6C00;
+}
+/* Стилі для ГЕРОЯ */
+.hero-container {
+    display: flex;
+}
+.hero__list {
+    width: 100px;
+}
+.hero__link {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.2em;
+    color: #303030;
+}
+.hero__link:hover,
+.hero__link:focus {
+    color: #FF6C00;
+}
+.overlay {
+    padding: 272px 526px 208px 100px;
+
+    background-color:black;
+    background-image: linear-gradient(
+        rgba(25, 28, 38, 0.2), 
+        rgba(25, 28, 38, 0.2)),
+        url(../images/overlay.jpg);
+}
+.hero-pre-title {
+    color: rgba(157, 164, 189, 0.6);;
+}
+
+.hero-title {
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 1.18;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+}
+.hero-after-title {
+    font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: 0.02em;
+    color: #9DA4BD;
+}
 
