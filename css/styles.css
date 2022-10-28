@@ -104,6 +104,8 @@ body {
     border: 1px solid #FF6C00;
     border-radius: 25px;
 
+    transition: background-color, 2500ms, linear;
+
     font-family: inherit;
     font-weight: 600;
     font-size: 12px;
@@ -173,7 +175,7 @@ body {
 }
 .connect__button {
     margin-left: 43px;
-    transition: color 2500ms linear;
+    
 }
 .connect__button:hover,
 .connect__button:focus {
@@ -380,7 +382,7 @@ body {
 }
 
 .benefits-item {
-    position: relative;
+    
     width: 170px;
     height: 130px;
     padding: 20px 24px;
@@ -399,7 +401,6 @@ body {
 
 }
 .digit {
-    /* position: relative; */
     display: block;
 
     font-weight: 700;
@@ -413,8 +414,8 @@ body {
 
 .plus {
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 12%;
+    right: 10%;
 
     display: flex;
     justify-content: center;
@@ -423,20 +424,6 @@ body {
     fill: #FF6C00;
 }
 
-.digit::after {
-    content: '';
-    width: 13px;
-    height: 22px;
-    
-
-    /* font-weight: 600;
-    font-size: 16px;
-    line-height: 1.37;
-    text-align: center;
-    vertical-align: top;
-
-    color: #FF6C00; */
-}
 .benefits-item-text {
     font-weight: 600;
     font-size: 11px;
@@ -599,6 +586,7 @@ body {
 }
 
 .contacts-map-link {
+    /* display: block; */
     font-weight: 700;
     font-size: 18px;
     line-height: 1.67;
@@ -612,6 +600,12 @@ body {
 .contacts-map-link:hover,
 .contacts-map-link:focus {
     color: #FF6C00;
+}
+
+.contacts-icon {
+    margin-right: 16px;
+
+    fill: #9DA4BD;
 }
 
 .contacts-item:not(:last-child) {
