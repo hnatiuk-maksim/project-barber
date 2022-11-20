@@ -1,0 +1,14 @@
+.btn {
+    min-width: 160px;
+    height: 40px;
+    background-color: transparent;
+    border: 1px solid $button-border-color;
+    border-radius: 25px;
+
+    transition: background-color, 2500ms, linear;
+
+    font-family: inherit;
+    @include font (600, 12px, 1.33, 0.09em);
+    text-transform: uppercase;
+    color: $button-text-color;
+}

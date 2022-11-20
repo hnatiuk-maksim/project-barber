@@ -1,0 +1,16 @@
+.pre-title {
+    @include font (600, 11px, 1.36, null);
+    text-transform: uppercase;
+
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    &::before {
+        content: '';
+        width: 60px;
+        height: 1px;
+        background-color: currentColor;
+        
+    }
+}

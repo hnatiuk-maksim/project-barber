@@ -1,0 +1,4 @@
+.after-title {
+    @include font (null, 18px, 1.87, 0.02em);
+    color: $after-title-color;
+}
