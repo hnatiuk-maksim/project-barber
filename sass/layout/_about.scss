@@ -1,0 +1,36 @@
+.container-about {
+    display: flex;
+    gap: 30px;
+}
+
+.about-list {
+    display: flex;
+    gap: 30px;
+}
+.about-wrap {
+    max-width: 470px;
+}
+.about-pre-title {
+    margin-bottom: 20px;
+}
+.about-title {
+    margin-bottom: 20px;
+}
+.about-after-title {
+    margin-bottom: 20px;
+}
+.about-text {
+    margin-bottom: 42px;
+
+    @include font (400, 14px, 1.86, 0.02em);
+    color: $main-text-color;
+}
+
+.about-btn {
+    color: $secon-btn-color;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+    background-color: #FF6C00;
+    }
+}

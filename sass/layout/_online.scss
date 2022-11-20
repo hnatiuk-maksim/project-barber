@@ -1,0 +1,34 @@
+.online {
+    width: calc(100% / 2 - 15px);
+    padding-top: 130px;
+}
+.online-title {
+    margin-bottom: 44px;
+    color: #FFFFFF;
+}
+.online-form {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 30px;
+    row-gap: 44px;
+
+}
+.online-input {
+    width: 270px;
+    height: 23px;
+    background-color: transparent;
+    &::placeholder {
+        @include font (600, 11px, 1.36, 0.1em);
+        text-transform: uppercase;
+        color: rgba(157, 164, 189, 0.4);;
+    }
+}
+.online-item {
+}
+.online-textarea {
+    width: 100%;
+}
+.btn {
+}
+.online-btn {
+}

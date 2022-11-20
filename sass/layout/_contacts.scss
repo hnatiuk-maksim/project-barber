@@ -1,0 +1,72 @@
+.contacts {
+    width: calc(50% - 15px);
+    padding-left: 100px;
+    padding-top: 130px;
+}
+.contacts-title {
+    margin-bottom: 40px;
+
+    color: #FFFFFF;
+}
+.contacts-address {
+    margin-bottom: 70px;
+}
+
+.contacts-map-link {
+    /* display: block; */
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: 0.02em;
+
+    color: #9da4bd;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.contacts-map-link:hover,
+.contacts-map-link:focus {
+    color: #FF6C00;
+}
+
+.contacts-icon {
+    margin-right: 16px;
+
+    fill: #9DA4BD;
+}
+
+.contacts-item:not(:last-child) {
+    margin-bottom: 20px;
+}
+.contacts-link {
+    font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: 0.02em;
+
+    color: #9da4bd;
+}
+
+.contacts-link:hover,
+.contacts-link:focus {
+    color: #FF6C00;
+}
+
+.contacts-subtitle {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    text-transform: uppercase;
+    
+    color: #ffffff;
+}
+.contacts-subtitle.pre-title::before {
+    background-color: rgba(157, 164, 189, 0.4);;
+}
+.contacts-shedule {
+    font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: 0.02em;
+    margin-bottom: 20px;
+
+    color: #9da4bd;
+}
