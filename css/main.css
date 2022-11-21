@@ -32,6 +32,8 @@ address {
 
 img {
   display: block;
+  height: auto;
+  max-width: 100%;
   width: 100%;
 }
 
@@ -48,8 +50,20 @@ body {
 }
 
 .section {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 84px;
+  padding-bottom: 84px;
+}
+@media screen and (min-width: 768px) {
+  .section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
 }
 
 .visually-hidden {
@@ -67,10 +81,25 @@ body {
 }
 
 .container {
-  width: 1200px;
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 448px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
 }
 
 .section-title {
@@ -467,14 +496,30 @@ body {
   margin-bottom: 44px;
   color: #303030;
 }
+@media screen and (min-width: 768px) {
+  .barbers-title {
+    text-align: center;
+  }
+}
 
 .barbers-list {
   display: flex;
+  flex-wrap: wrap;
   gap: 30px;
 }
 
 .barbers-item {
-  width: calc((100% - 60px) / 2);
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .barbers-item {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .barbers-item {
+    width: calc((100% - 60px) / 3);
+  }
 }
 
 .barbers-wrap {
@@ -527,17 +572,33 @@ body {
 }
 
 .gallery-pre-title {
-  margin-bottom: 44px;
+  margin-bottom: 71px;
   color: #303030;
+}
+@media screen and (min-width: 768px) {
+  .gallery-pre-title {
+    margin-bottom: 44px;
+  }
 }
 
 .gallery-list {
   display: flex;
+  flex-wrap: wrap;
   gap: 30px;
 }
 
 .gallery-item {
-  width: calc((100% - 90px) / 3);
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .gallery-item {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .gallery-item {
+    width: calc((100% - 90px) / 4);
+  }
 }
 
 .contact-wrap {

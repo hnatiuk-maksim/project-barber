@@ -1,12 +1,21 @@
 .gallery-pre-title {
-    margin-bottom: 44px;
-
+    margin-bottom: 71px;
+    @media screen and (min-width: 768px) {
+        margin-bottom: 44px;
+    }
     color: #303030;
 }
 .gallery-list {
     display: flex;
+    flex-wrap: wrap;
     gap: 30px;
 }
 .gallery-item {
-    width: calc((100% - 90px) / 3);
+    width: 100%;
+    @media screen and (min-width: 768px) {
+        width: calc((100% - 30px) / 2);
+    }
+    @media screen and (min-width: 1200px) {
+        width: calc((100% - 90px) / 4);
+    }
 }
