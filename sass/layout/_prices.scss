@@ -1,11 +1,27 @@
 .prices {
     background-color: $prices-section-back;
-    background-image: url(../images/prices.png);
+    background-image: url(../images/prices-mob-1x.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    max-width: 1600px;
     margin: 0 auto;
+    @include retina {
+        background-image: url(../images/prices-mob-2x.png);
+    }
+
+    @include tablet {
+        background-image: url(../images/prices-tab-1x.png);
+        @include retina {
+            background-image: url(../images/prices-tab-2x.png);
+        }
+    }
+
+    @include desktop {
+        background-image: url(../images/prices-desk-1x.png);
+        @include retina {
+            background-image: url(../images/prices-desk-2x.png);
+        }
+    }
 }
 .prices-pre-title {
     margin-bottom: 20px;
@@ -13,17 +29,42 @@
     color: rgba(157, 164, 189, 0.6);
 }
 .prices-title {
+    @include font (700, 40px, 1.18, 0.05em);
     margin-bottom: 44px;
-
     color: $main-title-color;
+
+    @include tablet {
+        @include font (700, 42px, 1.17, 0.05em);
+    }
 }
 
 .prices-wrap {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+
     margin-bottom: 44px;
+    background-image: linear-gradient(180deg, #171A24 0%, rgba(23, 26, 36, 0.2) 100%);
+    
+    @include desktop {
+        flex-direction: row;
+        justify-content: space-between;
+        background-image: none;
+    }      
 }
 .prices-list {
+    padding: 30px 20px 0px 40px;
+    &:last-child {
+        padding-bottom: 32px;
+    }
+    
+    @include tablet {
+        padding: 32px 40px 0 40px;
+        &:last-child {
+            padding-bottom: 32px;
+        }
+    }
+
+    @include desktop {
     padding: 30px 20px;
     width: calc((100% - 30px) / 2);
     &:first-child {
@@ -39,6 +80,7 @@
         #090B13 0%, 
         rgba(9, 11, 19, 0.2) 100%
         );
+    }
     }
 }
 
@@ -59,9 +101,11 @@
 }
 
 .prices-list-text {
-    font-size: 18px;
-    line-height: 1.67;
-    letter-spacing: 0.02em;
+    @include font (400, 14px, 1.43, 0.02em);
+    @include tablet {
+        @include font (400, 18px, 1.67, 0.02em);
+    }
+    
     color: #9da4bd;
 }
 
