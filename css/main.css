@@ -34,7 +34,6 @@ img {
   display: block;
   height: auto;
   max-width: 100%;
-  width: 100%;
 }
 
 body {
@@ -289,12 +288,33 @@ body {
 }
 
 .about-list {
-  display: flex;
-  gap: 30px;
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .about-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .about-list {
+    flex-wrap: nowrap;
+  }
 }
 
 .about-wrap {
-  max-width: 470px;
+  max-width: 418px;
+}
+@media screen and (min-width: 768px) {
+  .about-wrap {
+    max-width: 330px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .about-wrap {
+    max-width: 470px;
+  }
 }
 
 .about-pre-title {
@@ -302,20 +322,54 @@ body {
 }
 
 .about-title {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.18;
+  letter-spacing: 0.05em;
   margin-bottom: 20px;
+}
+@media screen and (max-width: 767px) {
+  .about-title {
+    max-width: 306px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .about-title {
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 1.17;
+    letter-spacing: 0.05em;
+  }
 }
 
 .about-after-title {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.02em;
   margin-bottom: 20px;
+}
+@media screen and (min-width: 768px) {
+  .about-after-title {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: 0.02em;
+  }
 }
 
 .about-text {
-  margin-bottom: 42px;
+  margin-bottom: 40px;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.86;
   letter-spacing: 0.02em;
   color: #555555;
+}
+@media screen and (min-width: 1200px) {
+  .about-text {
+    margin-bottom: 42px;
+  }
 }
 
 .about-btn {
@@ -487,6 +541,20 @@ body {
   background-color: #F7F7F7;
 }
 
+.barbers-container {
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .barbers-container {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .barbers-container {
+    width: 100%;
+  }
+}
+
 .barbers-pre-title {
   margin-bottom: 20px;
   color: #303030;
@@ -496,16 +564,16 @@ body {
   margin-bottom: 44px;
   color: #303030;
 }
-@media screen and (min-width: 768px) {
-  .barbers-title {
-    text-align: center;
-  }
-}
 
 .barbers-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: 64px;
+}
+@media screen and (min-width: 1200px) {
+  .barbers-list {
+    gap: 30px;
+  }
 }
 
 .barbers-item {

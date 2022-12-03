@@ -81,14 +81,34 @@
         </div>
     </section> -->
 <!-- Section ABOUT -->
-    <!-- <section class="about section" id="about">
+    <section class="about section" id="about">
         <div class="container container-about">
             <ul class="about-list list">
                 <li class="about-item">
-                    <img src="./images/img-01.jpg" alt="Haircut" width="270" height="445">
+                    <picture>
+                        <source media="(min-width: 1200px)" srcset="./images/about-01-desk-1x.jpg 1x, ./images/about-01-desk-2x.jpg 2x">
+                        <source media="(min-width: 768px)" srcset="./images/about-01-tab-1x.jpg 1x, ./images/about-01-tab-2x.jpg 2x">
+                        
+                        <img 
+                        src="./images/about-01-desk-1x.jpg" 
+                        class="about-image" 
+                        alt="Haircut" 
+                        width="330" />
+                    </picture>
+                    
                 </li>
                 <li class="about-item">
-                    <img src="./images/img-02.jpg" alt="Haircut" width="270" height="445">
+                    <picture>
+                        <source media="(min-width: 1200px)" srcset="./images/about-02-desk-1x.jpg 1x, ./images/about-02-desk-2x.jpg 2x">
+                        <source media="(min-width: 768px)" srcset="./images/about-02-tab-1x.jpg 1x, ./images/about-02-tab-2x.jpg 2x">
+                        
+                        <img 
+                        src="./images/about-02-desk-1x.jpg" 
+                        class="about-image" 
+                        alt="Haircut" 
+                        width="330" />
+                    </picture>
+                    
                 </li>
             </ul>
             <div class="about-wrap">
@@ -99,7 +119,7 @@
                 <button type="button" class="about-btn btn">Online-booking</button>
             </div>
         </div>
-    </section> -->
+    </section>
         <!-- Section PRICES -->
     <!-- <section class="section prices" id="prices">
         <div class="container">
@@ -201,7 +221,16 @@
             <h2 class="barbers-title section-title">Our barbers</h2>
             <ul class="barbers-list list">
                 <li class="barbers-item">
-                    <img src="./images/img-03.jpg" alt="John Smith" width="370" height="346">
+                    <picture>
+                        <source media="(min-width: 1200px)" srcset="./images/barber-01-desk-1x.jpg 1x, ./images/barber-01-desk-2x.jpg 2x">
+                        <source media="(min-width: 768px)" srcset="./images/barber-01-tab-1x.jpg 1x, ./images/barber-01-tab-2x.jpg 2x">
+                        <source media="(min-width: 320px)" srcset="./images/barber-01-mob-1x.jpg 1x, ./images/barber-01-mob-2x.jpg 2x">
+                        <img 
+                        src="./images/barber-01-desk-1x.jpg" 
+                        class="barber-photo" 
+                        alt="John Smith" 
+                        width="450" />
+                    </picture>
                     <div class="barbers-wrap">
                         <h3 class="barbers-wrap-title">John Smith</h3>
                         <p class="barbers-wrap-text">Extreme Barber</p>
@@ -238,7 +267,17 @@
                     </div>
                 </li>
                 <li class="barbers-item">
-                    <img src="./images/img-04.jpg" alt="Michele Doe" width="370" height="346">
+                    <picture>
+                        <source media="(min-width: 1200px)" srcset="./images/barber-02-desk-1x.jpg 1x, ./images/barber-02-desk-2x.jpg 2x">
+                        <source media="(min-width: 768px)" srcset="./images/barber-02-tab-1x.jpg 1x, ./images/barber-02-tab-2x.jpg 2x">
+                        <source media="(min-width: 320px)" srcset="./images/barber-02-mob-1x.jpg 1x, ./images/barber-02-mob-2x.jpg 2x">
+                        <img 
+                        src="./images/barber-02-desk-1x.jpg" 
+                        class="barber-photo" 
+                        alt="Michele Doe" 
+                        width="450" />
+                    </picture>
+                    
                     <div class="barbers-wrap">
                         <h3 class="barbers-wrap-title">Michele Doe</h3>
                         <p class="barbers-wrap-text">Extreme Barber</p>
@@ -275,7 +314,17 @@
                     </div>
                 </li>
                 <li class="barbers-item">
-                    <img src="./images/img-05.jpg" alt="Alan Black" width="370" height="346">
+                    <picture>
+                        <source media="(min-width: 1200px)" srcset="./images/barber-03-desk-1x.jpg 1x, ./images/barber-03-desk-2x.jpg 2x">
+                        <source media="(min-width: 768px)" srcset="./images/barber-03-tab-1x.jpg 1x, ./images/barber-03-tab-2x.jpg 2x">
+                        <source media="(min-width: 320px)" srcset="./images/barber-03-mob-1x.jpg 1x, ./images/barber-03-mob-2x.jpg 2x">
+                        <img 
+                        src="./images/barber-03-desk-1x.jpg" 
+                        class="barber-photo" 
+                        alt="Alan Black" 
+                        width="450" />
+                    </picture>
+                    
                     <div class="barbers-wrap">
                         <h3 class="barbers-wrap-title">Alan Black</h3>
                         <p class="barbers-wrap-text">Extreme Barber</p>
@@ -321,16 +370,56 @@
             <h2 class="visually-hidden">Gallery</h2>
             <ul class="gallery-list list">
                 <li class="gallery-item">
-                    <img src="./images/img-06.jpg" alt="Haircut" width="270" height="360">
+                    <picture>
+                        <source media="(min-width: 1200px)" srcset="./images/gallery-01-desk-1x.jpg 1x, ./images/gallery-01-desk-2x.jpg 2x">
+                        <source media="(min-width: 768px)" srcset="./images/gallery-01-tab-1x.jpg 1x, ./images/gallery-01-tab-2x.jpg 2x">
+                        <source media="(min-width: 320px)" srcset="./images/gallery-01-mob-1x.jpg 1x, ./images/gallery-01-mob-2x.jpg 2x">
+                        <img 
+                        src="./images/gallery-01-desk-1x.jpg" 
+                        class="gallery-photo" 
+                        alt="Haircut" 
+                        width="418" />
+                    </picture>
+                    
                 </li>
                 <li class="gallery-item">
-                    <img src="./images/img-07.jpg" alt="Haircut" width="270" height="360">
+                    <picture>
+                        <source media="(min-width: 1200px)" srcset="./images/gallery-02-desk-1x.jpg 1x, ./images/gallery-02-desk-2x.jpg 2x">
+                        <source media="(min-width: 768px)" srcset="./images/gallery-02-tab-1x.jpg 1x, ./images/gallery-02-tab-2x.jpg 2x">
+                        <source media="(min-width: 320px)" srcset="./images/gallery-02-mob-1x.jpg 1x, ./images/gallery-02-mob-2x.jpg 2x">
+                        <img 
+                        src="./images/gallery-02-desk-1x.jpg" 
+                        class="gallery-photo" 
+                        alt="Haircut" 
+                        width="418" />
+                    </picture>
+                    
                 </li>
                 <li class="gallery-item">
-                    <img src="./images/img-08.jpg" alt="Haircut" width="270" height="360">
+                    <picture>
+                        <source media="(min-width: 1200px)" srcset="./images/gallery-03-desk-1x.jpg 1x, ./images/gallery-03-desk-2x.jpg 2x">
+                        <source media="(min-width: 768px)" srcset="./images/gallery-03-tab-1x.jpg 1x, ./images/gallery-03-tab-2x.jpg 2x">
+                        <source media="(min-width: 320px)" srcset="./images/gallery-03-mob-1x.jpg 1x, ./images/gallery-03-mob-2x.jpg 2x">
+                        <img 
+                        src="./images/gallery-03-desk-1x.jpg" 
+                        class="gallery-photo" 
+                        alt="Haircut" 
+                        width="418" />
+                    </picture>
+                    
                 </li>
                 <li class="gallery-item">
-                    <img src="./images/img-09.jpg" alt="Haircut" width="270" height="360">
+                    <picture>
+                        <source media="(min-width: 1200px)" srcset="./images/gallery-04-desk-1x.jpg 1x, ./images/gallery-04-desk-2x.jpg 2x">
+                        <source media="(min-width: 768px)" srcset="./images/gallery-04-tab-1x.jpg 1x, ./images/gallery-04-tab-2x.jpg 2x">
+                        <source media="(min-width: 320px)" srcset="./images/gallery-04-mob-1x.jpg 1x, ./images/gallery-04-mob-2x.jpg 2x">
+                        <img 
+                        src="./images/gallery-04-desk-1x.jpg" 
+                        class="gallery-photo" 
+                        alt="Haircut" 
+                        width="418" />
+                    </picture>
+                    
                 </li>
             </ul>
             </div>
