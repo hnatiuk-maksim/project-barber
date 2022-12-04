@@ -14,26 +14,29 @@
             background-image: url(../images/contacts-tab-2x.png);
         }
     }
+    @include desktop {
+        background-color: transparent;
+        background-image: none;
+        
+    }
 }
 
 .contacts {
 
     @include desktop {
-        width: calc(50% - 15px);
+        width: 570px;
+        // width: calc(50% - 15px);
         padding-left: 100px;
         padding-top: 130px;
     }
     
 }
 .contacts-title {
-    display: flex;
-    justify-content: center;
-
-    @include tablet {
-        justify-content: start;
-    }
+    text-align: center;
     margin-bottom: 40px;
-
+    @include tablet {
+        text-align-last: left;
+    }
     color: #FFFFFF;
 }
 
@@ -41,6 +44,9 @@
     @include tablet {
         display: flex;
         gap: 30px;
+    }
+    @include desktop {
+        display: block;
     }
     
 }
@@ -96,6 +102,7 @@
 
 
 .contacts-subtitle {
+    margin-bottom: 20px;
     font-weight: 600;
     font-size: 11px;
     line-height: 1.36;
@@ -110,7 +117,7 @@
     font-size: 18px;
     line-height: 1.67;
     letter-spacing: 0.02em;
-    margin-bottom: 20px;
+    
 
     color: #9da4bd;
 }

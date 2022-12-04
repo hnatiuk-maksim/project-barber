@@ -1,27 +1,68 @@
+.hero {
+    background-color:black;
+    background-image: linear-gradient(
+            rgba(25, 28, 38, 0.2), 
+            rgba(25, 28, 38, 0.2)),
+            url(../images/hero-mob-1x.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    @include retina {
+        background-image: linear-gradient(
+            rgba(25, 28, 38, 0.2), 
+            rgba(25, 28, 38, 0.2)),
+            url(../images/hero-mob-2x.jpg);
+    }
+    @include tablet {
+        background-color: transparent;
+        background-image: none;
+    }
+}
+
 .hero-container {
     display: flex;
+    // padding: 0;
+    // max-width: 100%;
+    @include tablet {
+        padding-left: 15px;
+        padding-right: 0;
+        max-width: 720px;
+        }
+    @include desktop {
+        max-width: 1200px;
+        }
+    
+    
 }
 .hero-soc {
-    width: 100px;
-    display: flex;
-    align-items: end;
-    padding-bottom: 40px;
-    padding-left: 27px;
+    display: none;
+    @include tablet {
+        width: 100px;
+        display: flex;
+        align-items: end;
+        padding-bottom: 40px;
+        padding-left: 27px;
+    }
+    
 }
 .hero__list {
-    display: flex;
-    transform: rotate(-90deg) 
-            translateY(100%);
-    transform-origin: bottom left;
-    align-items: center;
-    gap: 40px;
-
-    &::before {
-        content: '';
-        width: 60px;
-        height: 1px;
-        background-color: $second-title-color;
+   
+    @include tablet {
+        display: flex;
+        transform: rotate(-90deg) 
+                translateY(100%);
+        transform-origin: bottom left;
+        align-items: center;
+        gap: 40px;
+    
+        &::before {
+            content: '';
+            width: 60px;
+            height: 1px;
+            background-color: $second-title-color;
+        }
     }
+    
 }
 
 .hero__link {
@@ -35,26 +76,71 @@
 }
 
 .overlay {
-    padding: 272px 526px 208px 100px;
+    padding-top: 208px;
+    padding-bottom: 209px;
+    @include tablet {
+        padding-top: 272px;
+        padding-bottom: 237px;
+        padding-left: 119px;
+        background-color:black;
+        background-image: linear-gradient(
+            rgba(25, 28, 38, 0.2), 
+            rgba(25, 28, 38, 0.2)),
+            url(../images/hero-tab-1x.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            flex-grow: 1;
+            @include retina {
+                background-image: linear-gradient(
+            rgba(25, 28, 38, 0.2), 
+            rgba(25, 28, 38, 0.2)),
+            url(../images/hero-tab-2x.jpg);
+            }
+            
+    }
+    
+    @include desktop {
+       
+        padding-top: 272px;
+        padding-bottom: 208px;
+        padding-left: 100px;
+        
 
-    background-color:black;
-    background-image: linear-gradient(
-        rgba(25, 28, 38, 0.2), 
-        rgba(25, 28, 38, 0.2)),
-        url(../images/overlay.jpg);
-        background-size: cover;
-        flex-grow: 1;
+        background-color:black;
+        background-image: linear-gradient(
+            rgba(25, 28, 38, 0.2), 
+            rgba(25, 28, 38, 0.2)),
+            url(../images/overlay.jpg);
+            background-size: cover;
+            flex-grow: 1;
+    }
+    
 }
 .hero-pre-title {
-    color: rgba(157, 164, 189, 0.6);;
+    margin-bottom: 20px;
+    color: rgba(157, 164, 189, 0.6);
 }
 
 .hero-title {
+    margin-bottom: 20px;
+
     font-family: 'Raleway';
-    @include font (700, 72px, 1.18, 0.05em);
+    @include font (700, 48px, 1.17, 0.05em);
     color: $main-title-color;
+    @include desktop {
+        @include font (700, 72px, 1.18, 0.05em);
+    }
 }
 .hero-after-title {
-    @include font (null, 18px, 1.67, 0.02em);
+    max-width: 336px;
+    @include font (null, 16px, 1.62, 0.02em);
+    @include tablet {
+        max-width: 358px;
+        @include font (null, 18px, 1.67, 0.02em);
+    }
+    
+
+    
     color: $hero-after-color;
 }

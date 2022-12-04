@@ -22,11 +22,19 @@
 }
 
 .logo-icon {
-    fill: $logo-icon-color;
+    fill: #ffffff;
+    @include tablet {
+        fill: $logo-icon-color;
+    }
+    
 }
 .navigation {
-    display: flex;
-    gap: 30px;
+    display: none;
+    @include tablet {
+        display: flex;
+        gap: 30px;
+    }
+    
 }
 
 .navigation__item {
@@ -43,8 +51,13 @@
 }
 
 .connect {
-    margin-left: auto;
-    padding-right: 17px;
+    display: none;
+    @include tablet {
+        display: block;
+        margin-left: auto;
+        padding-right: 17px;
+    }
+    
 }
 .connect__link {
     @include font (600, 12px, 1.33, 0.1em);

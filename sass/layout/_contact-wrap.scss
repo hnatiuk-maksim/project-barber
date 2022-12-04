@@ -2,20 +2,25 @@
     background-color: #191C26;
     @include desktop {
         display: flex;
+        justify-content: center;
         background-color: #191C26;
-        // background-image: url(../images/contact-wrap.png);
+        background-image: url(../images/contacts-desk-1x.png);
         background-repeat: no-repeat;
         background-position: right;
-        // background-size: calc(50% - 15px) 100%;
-        // max-width: 1600px;
+        background-size: calc(50% - 0px) 100%;
+        max-width: 1600px;
         margin: 0 auto;
+        @include retina {
+            background-image: url(../images/contacts-desk-2x.png);
+        }
     }
     
     > .container {
 
         @include desktop {
-            display: flex;
-            justify-content: space-between;
+            // display: flex;
+            // justify-content: space-between;
+            // width: 570px;
         }
         
     }
