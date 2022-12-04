@@ -1,25 +1,62 @@
 .benefits-container {
     display: flex;
     flex-direction: column-reverse;
+    @include desktop {
+        flex-direction: row;
+    }
     
 }
 .benefits-wrap {
-    max-width: 500px;
-    padding-top: 9px;
+    max-width: 418px;
+    margin-bottom: 44px;
+
+    @include tablet {
+        max-width: 500px;
+    }
+    @include desktop {
+        padding-top: 9px;
+    }
+    
+    
 }
 .benefits-list {
     display: flex;
-    width: 370px;
     flex-wrap: wrap;
-    margin-right: 130px;
-    margin-left: 100px;
+    // gap: 30px;
+    @include tablet {
+        margin-left: auto;;
+        max-width: 450px;
+    }
+   
+    
+
+
+    @include desktop {
+        display: flex;
+        width: 370px;
+        flex-wrap: wrap;
+        margin-right: 130px;
+        margin-left: 100px;
+    }
+    
 }
 
 .benefits-item {
     
-    width: 170px;
-    height: 130px;
-    padding: 20px 24px;
+
+    width: 193px;
+    height: 133px;
+    padding-top: 20px;
+
+
+    // margin-bottom: 30px;
+    // text-align: center;
+    @include desktop {
+        width: 170px;
+        height: 130px;
+        padding: 20px 24px;
+    }
+    
 
     background-color: #f7f7f7;
     &:nth-child(odd) {
@@ -32,9 +69,13 @@
 
 .digit-plus {
     position: relative;
+    width: 122px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .digit {
+    position: relative;
     display: block;
 
     @include font (700, 42px, 1.36, 0.05em);    
@@ -45,7 +86,7 @@
 .plus {
     position: absolute;
     top: 12%;
-    right: 10%;
+    right: 9%;
 
     display: flex;
     justify-content: center;
