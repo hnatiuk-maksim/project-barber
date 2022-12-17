@@ -9,6 +9,8 @@
 .header-container {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    // overflow: hidden;
 }
 
 .header-nav {
@@ -76,4 +78,73 @@
     &:focus {
         background-color: $accent-button-color;
     }
+}
+
+// --------------Mobile venu
+.icon-menu-open {
+    fill: #ffffff;
+}
+
+.mobile-menu {
+    // display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 337px;
+    height: 100%;
+    background-color: #fff;
+    transform: translate(0px, 0px);
+    overflow: auto;
+    transition: transform 250ms linear;
+}
+.mobile-container {
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+    padding: 48px 31px 48px 40px;
+}
+.mobile-menu.is-hidden {
+    // display: none;
+    transform: translate(100%, 0px);
+}
+
+.menu-close {
+    display: block;
+    margin-left: auto;
+    margin-bottom: 30px;
+}
+
+.mobile-item:not(:last-child) {
+    margin-bottom: 24px;
+}
+
+.mobile-link {
+    @include font (600, 18px, 1.39, 0.1em);
+    color: $second-title-color;
+}
+.mobile-connect-button {
+    margin-top: 24px;
+    color: $second-title-color;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+        background-color: $accent-button-color;
+    }
+}
+.mobile-list-soc {
+    // display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    // align-items: center;
+}
+
+.mobile-item-soc {
+    margin-bottom: 24px;
+}
+.mobile-link-soc {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    @include font (600, 14px, 1.36, 0.2em);
+    color: $second-title-color;
 }

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>BarberShop</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -54,6 +54,64 @@
             <div class="connect">
                 <a href="tel:+380681115097" class="connect__link link">+38 068 111 50 97</a>
                 <button type="button" class="connect__button btn" data-modal-open>Online-booking</button>
+            </div>
+            <button type="button" class="mobile-btn menu-open" data-menu-open>
+                <svg width="40" height="40">
+                    <use class="icon-menu-open" href="./images/icons.svg#icon-menu_open"></use>
+                </svg>
+            </button>
+            <div class="mobile-menu is-hidden" data-menu>
+                <div class="mobile-container">
+                    <div class="mobile-menu-nav">
+                        <button type="button" class="mobile-btn menu-close" data-menu-close>
+                            <svg width="40" height="40">
+                                <use class="icon-menu-close" href="./images/icons.svg#icon-menu-close"></use>
+                            </svg>
+                        </button>
+                        <ul class="list mobile-list" data-menu>
+                            <li class="mobile-item">
+                                <a href="#about" class="mobile-link link" data-menu-close>About</a>
+                            </li>
+                            <li class="mobile-item">
+                                <a href="#prices" class="mobile-link link" data-menu-close>Services and prices</a>
+                            </li>
+                            <li class="mobile-item">
+                                <a href="#barbers" class="mobile-link link" data-menu-close>Barbers</a>
+                            </li>
+                            <li class="mobile-item">
+                                <a href="#contacts" class="mobile-link link" data-menu-close>Contacts</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="mobile-menu-connect">
+                        <a href="tel:+380681115097" class="mobile-link link">+38 068 111 50 97</a>
+                        <button type="button" class="mobile-connect-button btn" data-modal-open>Online-booking</button>
+                    </div>
+                    <div class="mobile-menu-soc">
+                        <ul class="mobile-list-soc list">
+                            <li class="mobile-item-soc">
+                                <a href="http://" 
+                                target="_blank" 
+                                rel="noopener noreferrer nofollow"
+                                class="mobile-link-soc link">
+                                <svg class="mobile-soc-icon" width="20" height="20">
+                                    <use href="./images/icons.svg#icon-instagram"></use>
+                                </svg>
+                                Instagram</a>
+                            </li>
+                            <li class="mobile-item-soc">
+                                <a href="http://" 
+                                target="_blank" 
+                                rel="noopener noreferrer nofollow"
+                                class="mobile-link-soc link">
+                                <svg class="mobile-soc-icon" width="20" height="20">
+                                    <use href="./images/icons.svg#icon-youtube"></use>
+                                </svg>
+                                Youtube</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </header>
@@ -516,6 +574,7 @@
     <script>
         AOS.init();
     </script>
-    <script src="./js/modal.js"></script>    
+    <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>    
 </body>
 </html>

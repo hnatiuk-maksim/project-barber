@@ -24,6 +24,8 @@ ol {
 
 button {
   cursor: pointer;
+  margin: 0;
+  padding: 0;
 }
 
 address {
@@ -148,6 +150,18 @@ body {
   color: #FFFFFF;
 }
 
+.mobile-btn {
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+}
+@media screen and (min-width: 768px) {
+  .mobile-btn {
+    display: none;
+  }
+}
+
 .header {
   position: absolute;
   width: 100%;
@@ -158,6 +172,7 @@ body {
 .header-container {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .header-nav {
@@ -230,6 +245,80 @@ body {
 }
 .connect__button:hover, .connect__button:focus {
   background-color: #FF6C00;
+}
+
+.icon-menu-open {
+  fill: #ffffff;
+}
+
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 337px;
+  height: 100%;
+  background-color: #fff;
+  transform: translate(0px, 0px);
+  overflow: auto;
+  transition: transform 250ms linear;
+}
+
+.mobile-container {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+  padding: 48px 31px 48px 40px;
+}
+
+.mobile-menu.is-hidden {
+  transform: translate(100%, 0px);
+}
+
+.menu-close {
+  display: block;
+  margin-left: auto;
+  margin-bottom: 30px;
+}
+
+.mobile-item:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.mobile-link {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.39;
+  letter-spacing: 0.1em;
+  color: #303030;
+}
+
+.mobile-connect-button {
+  margin-top: 24px;
+  color: #303030;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mobile-connect-button:hover, .mobile-connect-button:focus {
+  background-color: #FF6C00;
+}
+
+.mobile-list-soc {
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.mobile-item-soc {
+  margin-bottom: 24px;
+}
+
+.mobile-link-soc {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+  color: #303030;
 }
 
 .hero {
@@ -647,8 +736,14 @@ body {
 }
 
 .benefits-list {
-  display: flex;
-  flex-wrap: wrap;
+  position: relative;
+}
+@media screen and (min-width: 480px) {
+  .benefits-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 @media screen and (min-width: 768px) {
   .benefits-list {
@@ -670,7 +765,28 @@ body {
   width: 193px;
   height: 133px;
   padding-top: 20px;
+  margin-bottom: 30px;
   background-color: #f7f7f7;
+}
+.benefits-item:last-child {
+  margin-bottom: 0;
+}
+.benefits-item:nth-child(odd) {
+  margin-right: auto;
+}
+.benefits-item:nth-child(even) {
+  margin-left: auto;
+}
+@media screen and (min-width: 480px) {
+  .benefits-item {
+    margin: 0;
+  }
+  .benefits-item:nth-child(odd) {
+    margin-right: 30px;
+  }
+  .benefits-item:nth-child(even) {
+    margin-top: 30px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .benefits-item {
@@ -679,13 +795,6 @@ body {
     padding: 20px 24px;
   }
 }
-.benefits-item:nth-child(odd) {
-  margin-right: 30px;
-}
-.benefits-item:nth-child(even) {
-  margin-top: 30px;
-}
-
 .digit-plus {
   position: relative;
   width: 122px;
@@ -1144,6 +1253,8 @@ body {
 
 .footer-container {
   display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
   justify-content: space-between;
   padding-top: 56px;
   padding-bottom: 56px;
