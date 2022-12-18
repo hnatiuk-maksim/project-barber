@@ -53,7 +53,7 @@
             </nav>
             <div class="connect">
                 <a href="tel:+380681115097" class="connect__link link">+38 068 111 50 97</a>
-                <button type="button" class="connect__button btn" data-modal-open>Online-booking</button>
+                <button type="button" class="connect__button btn open-popup" data-modal-open>Online-booking</button>
             </div>
             <button type="button" class="mobile-btn menu-open" data-menu-open>
                 <svg width="40" height="40">
@@ -85,7 +85,7 @@
                     </div>
                     <div class="mobile-menu-connect">
                         <a href="tel:+380681115097" class="mobile-link link">+38 068 111 50 97</a>
-                        <button type="button" class="mobile-connect-button btn" data-modal-open>Online-booking</button>
+                        <button type="button" class="mobile-connect-button btn open-popup" data-modal-open>Online-booking</button>
                     </div>
                     <div class="mobile-menu-soc">
                         <ul class="mobile-list-soc list">
@@ -174,7 +174,7 @@
                 <h2 class="about-title section-title">Best Barbershop in your city</h2>
                 <p class="about-after-title after-title">If you want to add more confidence to your image, you should definitely visit us.</p>
                 <p class="about-text">We are a team that never stops at what has been achieved and are thirsty for changes. And when you fall into the hands of our master, you will never be the same again. We are a team that is always "on the same wave" with clients. Therefore, we are always ready to improve everyone who comes to us!</p>
-                <button type="button" class="about-btn btn">Online-booking</button>
+                <button type="button" class="about-btn btn open-popup" data-modal-open>Online-booking</button>
             </div>
         </div>
     </section>
@@ -221,7 +221,7 @@
                 </li>
             </ul>
             </div>
-            <button type="button" class="prices-btn btn">online-booking</button>
+            <button type="button" class="prices-btn btn open-popup">online-booking</button>
         </div>        
     </section>
         <!-- Section BENEFITS -->
@@ -569,7 +569,39 @@
             </li>
         </ul>
         </div>
-    </footer>    
+    </footer>
+<!-------------------------------------- Modal window     -->
+    <div class="backdrop">
+        <div class="modal">
+            <button type="button" class="modal-close close-popup" data-modal-close>
+                <svg class="modal-close-icon" width="18" height="18">
+                    <use href="./images/icons.svg#icon-menu-close"></use>
+                </svg>
+            </button>
+            <p class="modal-title">Online-booking</p>
+            <form class="online-form">
+                <input 
+                    type="text"
+                    placeholder="Name*"
+                    class="modal-input modal-item"
+                    name="online-name" 
+                />
+                <input 
+                    type="tel"
+                    placeholder="Phone*"
+                    class="modal-input modal-item"
+                    name="online-tel" 
+                />
+                <textarea
+                    name="online-text"
+                    class="online-textarea modal-item"
+                    placeholder="Message"
+                ></textarea>
+                <button type="submit" class="btn modal-btn">Send</button>
+            </form>
+
+        </div>
+    </div>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
